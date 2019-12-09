@@ -2,7 +2,7 @@ import { NativeModules, NativeEventEmitter } from "react-native";
 
 const VolumeControl = NativeModules.VolumeControl;
 export const VolumeControlEvents = new NativeEventEmitter(
-  NativeModules.VolumeControl
+  VolumeControl||0.1
 );
 
 export default VolumeControl;
